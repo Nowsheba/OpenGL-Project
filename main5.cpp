@@ -981,6 +981,7 @@ void summer() {
     cloud(cloudX+0.4f, 0.68f);
     groundsummer();
     riversummer();
+    drawTurbinesLeft();
     boat(boatX);
     tree();
     house();
@@ -989,7 +990,7 @@ void summer() {
     fence();
     boy();
     cow();
-    drawTurbinesLeft();
+    
 
     glFlush();
 }
@@ -1005,13 +1006,14 @@ void night() {
     cloud(cloudX+0.4f, 0.68f);
     groundnight();
     rivernight();
+    drawTurbinesLeft();
     boat(boatX);
     tree();
     house();
     tree1();
     road();
     fence();
-    drawTurbinesLeft();
+    
 
     glFlush();
 }
@@ -1026,6 +1028,7 @@ void rain() {
     groundrain();
     drawLightning();
     riversummer();
+    drawTurbinesLeft();
     boat(boatX);
     drawRain();
     tree();
@@ -1035,7 +1038,7 @@ void rain() {
     fence();
     boyRain();
     cow();
-    drawTurbinesLeft();
+    
 
     glFlush();
 }
@@ -1053,6 +1056,7 @@ void winter() {
     groundwinter();
     drawSnowPiles();
     riverwinter();
+    drawTurbinesLeft();
     boatwinter(boatX);
     drawSnow();
     treeWinter();
@@ -1060,8 +1064,7 @@ void winter() {
     tree1Winter();
     roadWinter();
     fenceWinter();
-    drawTurbinesLeft();
-
+    
     glFlush();
 }
 
@@ -1076,6 +1079,7 @@ void LateAutumn() {
     cloud(cloudX+0.4f, 0.68f);
     groundlateautumn();
     riversummer();
+    drawTurbinesLeft();
     boat(boatX);
     lateautumntree();
     house();
@@ -1085,7 +1089,7 @@ void LateAutumn() {
     boy();
     cow();
     ricefield();
-    drawTurbinesLeft();
+    
 
     glFlush();
 }
@@ -1108,6 +1112,7 @@ void autumn() {
     cloud(cloudX+0.3f, 0.25f);
     groundsummer();
     riversummer();
+    drawTurbinesLeft();
     boat(boatX);
     tree();
     house();
@@ -1117,7 +1122,7 @@ void autumn() {
     boy();
     cow();
     kansgrass();
-    drawTurbinesLeft();
+    
 
     glFlush();
 }
@@ -1134,6 +1139,8 @@ void spring() {
     cloud(cloudX+0.3f, 0.25f);
     groundsummer();
     riversummer();
+    drawTurbinesLeft();
+
     boat(boatX);
     tree();
     house();
@@ -1145,7 +1152,7 @@ void spring() {
     flowers();
     butterfly(0.6f, -0.72f);
     butterfly(0.8f, -0.75f);
-    drawTurbinesLeft();
+    
 
     glFlush();
 }
@@ -1279,3 +1286,4 @@ int main(int argc, char** argv) {
     glutMainLoop();
     return 0;
 }
+
